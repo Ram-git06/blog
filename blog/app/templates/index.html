@@ -1,0 +1,10 @@
+{% for st in store %}
+    name of store : {{st.st_name}}<br>
+    location of store : {{st.st_location}}<br>
+    address of store : {{st.st_Address}}<br>
+    status of store : {{st.st_status}}<br>
+    seller name : {{st.seller__sell_name}}<br>
+    seller gender : {{st.seller__sell_gender}}<br>
+    <img src="http://127.0.0.1:8000/media{{post.image}}" height="100", width="100">
+    <hr>
+{% endfor %}
