@@ -7,7 +7,7 @@ from django.contrib import auth
 
 def index(request):
     stores = store.objects.all().values("st_name", "st_location", "st_Address","st_status" ,"seller", 
-   "seller__sell_name", "seller__sell_gender")
+   "seller__sell_name", "seller__sell_gender" ,"image")
     
     return render(request, "index.html", {"store": stores})
 
